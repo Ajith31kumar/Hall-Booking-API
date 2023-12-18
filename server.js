@@ -57,7 +57,8 @@ let rooms = [{
   }]
  }]
 
-
+app.get("/", (req, res) => { res.send("Welcome to the Meeting Room Booking System") 
+})
 
 // 1 Creating a room with 'number of seats','amenities in room', 'Price for 1 hr'
 app.post("/makeroom", (req, res) => {
